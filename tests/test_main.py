@@ -90,7 +90,7 @@ def test_register_page(browser, CSS_SELECTORS):
         RegisterPage(browser).visibility_of_element_on_register_page(CSS_SELECTORS)
 
 
-@allure.story("Сценарий 1")
+@allure.story("OpenCart - работа с корзиной")
 @allure.title("Сценарий добавления продукта в корзину пользователем")
 def test_adding_new_product(browser):
     time.sleep(1)
@@ -120,7 +120,7 @@ def test_adding_new_product(browser):
         MainPage(browser).click_element_on_main_page(Login_Page.BUTTON_CONTINUE_FOR_LOGOUT)
 
 
-@allure.story("Сценарий 2")
+@allure.story("OpenCart - работа с корзиной")
 @allure.title("Сценарий очистки корзины пользователем")
 def test_removing_product_from_the_list(browser):
     time.sleep(1)
@@ -155,7 +155,7 @@ def test_removing_product_from_the_list(browser):
         MainPage(browser).click_element_on_main_page(Login_Page.BUTTON_CONTINUE_FOR_LOGOUT)
 
 
-@allure.story("Сценарий 3")
+@allure.story("OpenCart - работа с авторизацией")
 @allure.title("Сценарий регистрации нового пользователя")
 def test_new_user_registration(browser):
     time.sleep(1)
@@ -186,7 +186,7 @@ def test_new_user_registration(browser):
         RegisterPage(browser).click_element_on_register_page(Register_Page.BUTTON_CONTINUE_AFTER_REGISTRATION)
 
 
-@allure.story("Сценарий 4")
+@allure.story("OpenCart - работа с валютой")
 @allure.title("Сценарий смены цены в разной валюте")
 def test_currency_switching(browser):
     with allure.step("Шаг 1: Клик на элемент"):
